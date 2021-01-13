@@ -1,0 +1,7 @@
+Q. Write a query to list all the sales persons details along with the count of products sold by them (if any) till current date.
+
+=> select count(case when p.se_id=s.se_id then 1 else null end) as products_sold,s.* from pso p,salesex s group by s.se_id;
+
+
+Q. Write a query to retrieve the most sold product per day in a specific location (take any location) in last week.
+=> select p_name from product where p_code in(select p.p_code from pso p,ordert o where p.se_id in(select sa.se_id from salesex sa,sl s,location l where  l.loc_name="Bangalore" and s.loc_code=l.loc_code and sa.se_id=s.se_id) and o.o_code=p.o_code and o.date >= current_date()-7 group by p_code order by count(p_code) desc) limit 1;
