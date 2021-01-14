@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">>
+    <head>
+        <title>Login Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+        body{
+            background-image : url("log.jpg");
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+        </style>
+    </head>
+    <body>
+        <form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="form-group">
+                <center>Username: <input type="text" width="30%" id="u"></center>
+            </div>
+            <div class="form-group">
+                <center>Password: <input type="password" width="30%" id="p"></center>
+            </div>
+            <center><button type="submit" class="btn btn-" onclick="popup()">submit</button></center>
+        </form>
+    </body>
+    <script>
+        function popup() {
+            if(document.getElementById("u").value=="archit" && document.getElementById("p").value=="archit")
+            {alert("login success!");}
+            else{
+                alert("incorrect credentials!!!");
+            }
+        }
+    </script>
+</html>

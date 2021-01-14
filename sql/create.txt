@@ -1,0 +1,21 @@
+create table location (loc_code varchar(5) primary key, loc_name varchar(20))
+
+create table category (ctgy_code varchar(5) primary key, ctgy_name varchar(20))
+
+create table salesEx (se_id varchar(10) primary key, se_name varchar(20), se_dob date, se_gender char(1) check (se_gender in ('M', 'F')), se_mobile varchar(10))
+
+create table customer (cus_id varchar(10) primary key, cus_name varchar(20), cus_dob date, cus_gender char(1) check (cus_gender in ('M', 'F')), cus_mobile varchar(10))
+
+create table product (p_code varchar(5) primary key, p_name varchar(20), unit_price double)
+
+create table orderT (o_code varchar(5) primary key, date date not null, units double)
+
+create table p_to_cat (p_code varchar(5), foreign key(p_code) references product(p_code), ctgy_code varchar(5), foreign key(ctgy_code) references category(ctgy_code))
+
+create table pso (p_code varchar(5), foreign key(p_code) references product(p_code), se_id varchar(5), foreign key(se_id) references salesEx(se_id), o_code varchar(5), foreign key(o_code) references orderT(o_code))
+
+create table oc (o_code varchar(5), foreign key(o_code) references orderT(o_code), cus_id varchar(10), foreign key(cus_id) references customer(cus_id))
+
+create table cl (cus_id varchar(10), foreign key(cus_id) references customer(cus_id), loc_code varchar(5), foreign key(loc_code) references location(loc_code))
+
+create table sl(se_id varchar(10), foreign key(se_id) references salesEx(se_id), loc_code varchar(5), foreign key(loc_code) references location(loc_code))
