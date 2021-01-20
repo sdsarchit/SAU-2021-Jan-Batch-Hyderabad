@@ -1,0 +1,115 @@
+<students>
+
+    <student>
+        <roll>1</roll>
+        <subject>Physics</subject>
+        <mark>70</mark>
+    </student>
+    <student>
+        <roll>1</roll>
+        <subject>Chemistry</subject>
+        <mark>90</mark>
+    </student>
+    <student>
+        <roll>1</roll>
+        <subject>Math</subject>
+        <mark>70</mark>
+    </student>
+
+    <student>
+        <roll>2</roll>
+        <subject>Physics</subject>
+        <mark>100</mark>
+    </student>
+    <student>
+        <roll>2</roll>
+        <subject>Chemistry</subject>
+        <mark>60</mark>
+    </student>
+    <student>
+        <roll>2</roll>
+        <subject>Math</subject>
+        <mark>70</mark>
+    </student>
+
+    <student>
+        <roll>3</roll>
+        <subject>Physics</subject>
+        <mark>50</mark>
+    </student>
+    <student>
+        <roll>3</roll>
+        <subject>Chemistry</subject>
+        <mark>50</mark>
+    </student>
+    <student>
+        <roll>3</roll>
+        <subject>Math</subject>
+        <mark>70</mark>
+    </student>
+
+    <student>
+        <roll>4</roll>
+        <subject>Physics</subject>
+        <mark>50</mark>
+    </student>
+    <student>
+        <roll>4</roll>
+        <subject>Chemistry</subject>
+        <mark>30</mark>
+    </student>
+    <student>
+        <roll>4</roll>
+        <subject>Math</subject>
+        <mark>60</mark>
+    </student>
+
+    <student>
+        <roll>5</roll>
+        <subject>Physics</subject>
+        <mark>50</mark>
+    </student>
+    <student>
+        <roll>5</roll>
+        <subject>Chemistry</subject>
+        <mark>90</mark>
+    </student>
+    <student>
+        <roll>5</roll>
+        <subject>Math</subject>
+        <mark>100</mark>
+    </student>
+
+    <student>
+        <roll>6</roll>
+        <subject>Physics</subject>
+        <mark>80</mark>
+    </student>
+    <student>
+        <roll>6</roll>
+        <subject>Chemistry</subject>
+        <mark>10</mark>
+    </student>
+    <student>
+        <roll>6</roll>
+        <subject>Math</subject>
+        <mark>80</mark>
+    </student>
+
+    <student>
+        <roll>7</roll>
+        <subject>Physics</subject>
+        <mark>100</mark>
+    </student>
+    <student>
+        <roll>7</roll>
+        <subject>Chemistry</subject>
+        <mark>90</mark>
+    </student>
+    <student>
+        <roll>7</roll>
+        <subject>Math</subject>
+        <mark>80</mark>
+    </student>
+
+</students>
